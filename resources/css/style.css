@@ -1,0 +1,109 @@
+/*-------------------------------------
+        Basic Setup
+-------------------------------------- */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Titillium Web', sans-serif;
+}
+
+/* header h1 */
+h1{
+    font-size: 42px;
+    color: #fff;
+}
+ul li{
+    list-style: none;
+}
+
+/*------------------------------------
+        Reuseable Components
+-------------------------------------- */
+
+.row{
+    max-width: 1140px;
+    margin:0 auto;
+}
+/* button */
+.btn,
+.btn a,
+.btn a:visited{
+    padding: 15px 60px;
+    border-bottom: 3px solid rgba(0, 0, 0, 0.71);
+    text-decoration: none;
+    border-radius: 3px;
+    display: inline-block;
+    color: #fff;
+    font-size: 16px;
+    margin-top: 50px;
+}
+
+/*------------------------------------
+        header
+-------------------------------------- */
+header{
+    /* background-color: #87509c; */
+    background:linear-gradient(#232224,#87509c41), url(./images/header-bg.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center center;
+    height: 85vh;
+    margin-top: 0;
+    position: relative;
+}
+
+.logo{
+    height: 30px;
+    width: auto;
+    margin-top: 20px;
+    float: left;
+}
+
+.main-nav{
+    float: right;
+    margin-top: 20px;
+}
+
+.main-nav li{
+    display: inline-block;
+    margin-left: 25px;
+}
+
+.main-nav li:first-child{
+    margin-left: 0;
+}
+
+.main-nav li a:link,
+.main-nav li a:visited{
+    color: #fff;
+    background-color: #643a7953;
+    text-decoration: none;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.main-nav li a:hover{
+    background-color: #643a79;
+}
+
+.hero-text-box{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+
+.btn-hero:link,
+.btn-hero:visited{
+
+    background-color: #eb7d4b;
+    border-color: #c86a40;
+}
