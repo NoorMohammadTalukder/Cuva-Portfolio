@@ -8,13 +8,33 @@
     box-sizing: border-box;
 }
 
-body{
-    font-family: 'Titillium Web', sans-serif;
+html{
+    font-size: 62.5%;
 }
 
+body{
+    font-family: 'Titillium Web', sans-serif;
+    text-rendering: optimizeLegibility;
+    /* line-height: 1.3rem; */
+}
+
+section{
+    padding: 8rem 0;
+    overflow: hidden;
+}
+
+.clear-fix::after{
+    content: "";
+    display: block;
+    clear: both;
+    height: 0;
+    visibility: hidden;
+}
+
+
 /* header h1 */
-h1{
-    font-size: 42px;
+header h1{
+    font-size: 4.2rem;
     color: #fff;
 }
 ul li{
@@ -26,22 +46,62 @@ ul li{
 -------------------------------------- */
 
 .row{
-    max-width: 1140px;
+    max-width: 114rem;
     margin:0 auto;
 }
 /* button */
 .btn,
 .btn a,
 .btn a:visited{
-    padding: 15px 60px;
-    border-bottom: 3px solid rgba(0, 0, 0, 0.71);
+    padding: 1.5rem 6rem;
+    border-bottom: 0.3rem solid rgba(0, 0, 0, 0.71);
     text-decoration: none;
-    border-radius: 3px;
+    border-radius: 0.3rem,;
     display: inline-block;
     color: #fff;
-    font-size: 16px;
-    margin-top: 50px;
+    font-size: 1.6rem;
+    margin-top: 5rem;
 }
+
+h2{
+    font-size: 4.2rem;
+    letter-spacing: 0.3rem;
+    font-weight: 600;
+    margin-top: 0;
+    margin-bottom: 2rem;
+    color: #fff;
+}
+
+h2::after{
+    content: "";
+    display: block;
+    height: 0.4rem;
+    background: #14a58c;
+    width: 5rem;
+    margin: auto;
+    margin-top: 2rem;
+}
+
+
+h3{
+    font-size: 2.4rem;
+    font-weight: 600;
+    
+}
+.box{
+    background: rgba(255, 255, 255, 0.338);
+    height: 52rem;
+    border-radius: 5px;
+    /* box-shadow: 10px 10px rgba(255, 255, 255, 0.177) ; */
+}
+.box p{
+    font-size: 1.6rem;
+    font-weight: 300;
+    margin: 3rem;
+    text-align:center;
+}
+
+
 
 /*------------------------------------
         header
@@ -52,26 +112,27 @@ header{
     background-repeat: no-repeat;
     background-size:cover;
     background-position: center center;
+    background-attachment: fixed;
     height: 85vh;
     margin-top: 0;
     position: relative;
 }
 
 .logo{
-    height: 30px;
+    height: 3rem;
     width: auto;
-    margin-top: 20px;
+    margin-top: 2rem;
     float: left;
 }
 
 .main-nav{
     float: right;
-    margin-top: 20px;
+    margin-top: 2rem;
 }
 
 .main-nav li{
     display: inline-block;
-    margin-left: 25px;
+    margin-left: 2.5rem;
 }
 
 .main-nav li:first-child{
@@ -83,9 +144,9 @@ header{
     color: #fff;
     background-color: #643a7953;
     text-decoration: none;
-    padding: 4px 8px;
-    border-radius: 4px;
-    font-size: 16px;
+    padding: 0.4rem 0.8rem;
+    border-radius: 0.4rem;
+    font-size: 1.5rem;
     transition: 0.3s;
 }
 
@@ -106,4 +167,36 @@ header{
 
     background-color: #eb7d4b;
     border-color: #c86a40;
+}
+
+
+/*------------------------------------
+       service-section
+-------------------------------------- */
+
+
+.service-section{
+    color: #fff;
+    /* background: #17c2a4; */
+    text-align: center;
+    background:linear-gradient(#17c2a3b6,#17c2a3b6), url(./images/service-section-bg.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-attachment: fixed;
+    background-position: center center;
+}
+
+
+.little-description{
+    font-size: 1.8rem;
+    width: 60%;
+    margin: 0 20%;
+    line-height: 3rem;
+    letter-spacing: 0.2rem;
+}
+
+.service-icon{
+    height:12rem;
+    margin: 4.5rem;
+
 }
