@@ -8,12 +8,14 @@
   <title>Portfolio</title>
   <!-- favicon -->
   <link rel="shortcut icon" href="./resources/images/favicon.ico" type="image/x-icon" />
-  <!-- css (resources) -->
-  <link rel="stylesheet" href="./resources/css/style.css" />
-  <link rel="stylesheet" href="./resources/css/responsive.css" />
+ 
   <!-- css (vendors) -->
   <link rel="stylesheet" href="./vendors/css/grid.css" />
   <link rel="stylesheet" href="./vendors/css/normalize.css" />
+  <link rel="stylesheet" href="./vendors/css/animatedRadial.css" />
+   <!-- css (resources) -->
+   <link rel="stylesheet" href="./resources/css/style.css" />
+   <link rel="stylesheet" href="./resources/css/responsive.css" />
   <!-- google fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -26,8 +28,8 @@
 <body>
   <!-- header started -->
 
-  <header>
-    <nav>
+  <header id="myHeader">
+    <nav class="navigation">
       <div class="row">
         <a href="#">
           <img class="logo" src="./resources/images/logo.png" alt="logo" srcset="" />
@@ -35,7 +37,7 @@
         <ul class="main-nav">
           <li><a href="#">HOME</a></li>
           <li><a href="#service">SERVICE</a></li>
-          <li><a href="#">WORK</a></li>
+          <li><a href="#team">TEAM</a></li>
           <li><a href="#">BLOG</a></li>
           <li><a href="#">CONTACT</a></li>
         </ul>
@@ -57,7 +59,7 @@
 
   <!-- service-section started -->
 
-  <section class="service-section clear-fix" id="service">
+  <section class="service-section " id="service">
     <div class="row">
       <h2>SERVICE WE PROVIDE</h2>
       <p class="little-description">
@@ -111,7 +113,7 @@
 
   <!-- team-section started -->
 
-  <section class="team-section">
+  <section class="team-section" id="team">
     <div class="row">
       <h2>MEET OUR BEAUTIFUL TEAM</h2>
       <p class="little-description">
@@ -229,10 +231,84 @@
 
   <!-- team-section end -->
 
+  <!-- skill-section start -->
+
+  <div class="skill-section" id="skill">
+    <div class="row">
+      <h2>WE GOT SKILLS</h2>
+      <p class="little-description">We are experience and professional in Web Design, HTML, CSS, Graphic Design and UI/UX </p>
+    </div>
+    <div class="row">
+      <div class="col span_1_of_4">
+        <svg class="radial-progress web-design" data-percentage="90" viewBox="0 0 80 80">
+          <circle class="x incomplete" cx="40" cy="40" r="35"></circle>
+          <circle class="complete" cx="40" cy="40" r="35" style="stroke-dashoffset: 39.58406743523136;"></circle>
+          <text class="percentage" x="50%" y="57%" transform="matrix(0, 1, -1, 0, 80, 0)">90%</text>
+        </svg>
+        <h3>WEB DESIGN</h3>
+      </div>
+      <div class="col span_1_of_4">
+        <svg class="radial-progress html-css" data-percentage="95" viewBox="0 0 80 80">
+          <circle class="incomplete" cx="40" cy="40" r="35"></circle>
+          <circle class="complete" cx="40" cy="40" r="35" style="stroke-dashoffset: 39.58406743523136;"></circle>
+          <text class="percentage" x="50%" y="57%" transform="matrix(0, 1, -1, 0, 80, 0)">95%</text>
+        </svg>
+        <h3>HTML/CSS</h3>
+      </div>
+      <div class="col span_1_of_4">
+        <svg class="radial-progress graphic-design" data-percentage="85" viewBox="0 0 80 80">
+          <circle class="incomplete" cx="40" cy="40" r="35"></circle>
+          <circle class="complete" cx="40" cy="40" r="35" style="stroke-dashoffset: 39.58406743523136;"></circle>
+          <text class="percentage" x="50%" y="57%" transform="matrix(0, 1, -1, 0, 80, 0)">85%</text>
+        </svg>
+        <h3>GRAPHIC DESIGN</h3>
+      </div>
+      <div class="col span_1_of_4">
+        <svg class="radial-progress ui-ux" data-percentage="80" viewBox="0 0 80 80">
+          <circle class="incomplete" cx="40" cy="40" r="35"></circle>
+          <circle class="complete" cx="40" cy="40" r="35" style="stroke-dashoffset: 39.58406743523136;"></circle>
+          <text class="percentage" x="50%" y="57%" transform="matrix(0, 1, -1, 0, 80, 0)">80%</text>
+        </svg>
+        <h3>UI/UX</h3>
+      </div>
+    </div>
+  </div>
+
+  <!-- skill-section end -->
+
+
+  <!-- Jquery google cdn -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
   <!-- java script (vendors) -->
   <script src="./vendors/js/html5shiv.min.js"></script>
   <script src="./vendors/js/respond.min.js"></script>
   <script src="./vendors/js/selectivizr-min.js"></script>
+  <script src="./vendors/js/animatedRadial.js"></script>
+  <!-- java script (resources) -->
+  <script src="./resources/js/main.js"></script>
+
+  <!-- <script>
+    const boxes = document.querySelectorAll(".box");
+
+window.addEventListener("scroll", checkBoxes);
+
+checkBoxes();
+
+function checkBoxes() {
+  const triggerBottom = (window.innerHeight / 5) * 4;
+  let a=0;;
+  boxes.forEach((box) => {
+    const boxTop = box.getBoundingClientRect().top;
+a=1;
+    if (boxTop < triggerBottom && a>0) {
+      box.classList.add("show");
+      a=1;
+    } else  {
+      box.classList.remove("show");
+    }
+  });
+}
+    </script> -->
 </body>
 
 </html>
