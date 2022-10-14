@@ -1,293 +1,530 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <!-- favicon -->
+    <link
+      rel="shortcut icon"
+      href="./resources/images/favicon.ico"
+      type="image/x-icon"
+    />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Portfolio</title>
-  <!-- favicon -->
-  <link rel="shortcut icon" href="./resources/images/favicon.ico" type="image/x-icon" />
- 
-  <!-- css (vendors) -->
-  <link rel="stylesheet" href="./vendors/css/grid.css" />
-  <link rel="stylesheet" href="./vendors/css/normalize.css" />
-  <link rel="stylesheet" href="./vendors/css/animatedRadial.css" />
-   <!-- css (resources) -->
-   <link rel="stylesheet" href="./resources/css/style.css" />
-   <link rel="stylesheet" href="./resources/css/responsive.css" />
-  <!-- google fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;400;600;700&display=swap"
-    rel="stylesheet" />
-  <!-- font awesone -->
-  <script src="https://kit.fontawesome.com/2640c680a4.js" crossorigin="anonymous"></script>
-</head>
+    <!-- css (vendors) -->
+    <link rel="stylesheet" href="./vendors/css/grid.css" />
+    <link rel="stylesheet" href="./vendors/css/normalize.css" />
+    <link rel="stylesheet" href="./vendors/css/animatedRadial.css" />
+    <!-- css (resources) -->
+    <link rel="stylesheet" href="./resources/css/style.css" />
+    <link rel="stylesheet" href="./resources/css/responsive.css" />
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- font awesone -->
+    <script
+      src="https://kit.fontawesome.com/2640c680a4.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
 
-<body>
-  <!-- header started -->
+  <body>
+    <!-- header started -->
 
-  <header id="myHeader">
-    <nav class="navigation">
+    <header id="myHeader">
+      <nav class="navigation">
+        <div class="row">
+          <a href="#">
+            <img
+              class="logo"
+              src="./resources/images/logo.png"
+              alt="logo"
+              srcset=""
+            />
+          </a>
+          <ul class="main-nav">
+            <li><a href="#">HOME</a></li>
+            <li><a href="#service">SERVICE</a></li>
+            <li><a href="#team">TEAM</a></li>
+            <li><a href="#skill">SKILLS</a></li>
+            <li><a href="#portfolio">PORTFOLIO</a></li>
+          </ul>
+        </div>
+      </nav>
+
       <div class="row">
-        <a href="#">
-          <img class="logo" src="./resources/images/logo.png" alt="logo" srcset="" />
-        </a>
-        <ul class="main-nav">
-          <li><a href="#">HOME</a></li>
-          <li><a href="#service">SERVICE</a></li>
-          <li><a href="#team">TEAM</a></li>
-          <li><a href="#">BLOG</a></li>
-          <li><a href="#">CONTACT</a></li>
-        </ul>
+        <div class="hero-text-box">
+          <h1>
+            Hi there! We are the new kids on the block and we build awesome
+            websites and mobile apps.
+          </h1>
+          <a class="btn btn-hero" href="#">Contact Us</a>
+        </div>
       </div>
-    </nav>
+    </header>
 
-    <div class="row">
-      <div class="hero-text-box">
-        <h1>
-          Hi there! We are the new kids on the block and we build awesome
-          websites and mobile apps.
-        </h1>
-        <a class="btn btn-hero" href="#">Contact Us</a>
+    <!-- header end -->
+
+    <!-- service-section started -->
+
+    <section class="service-section" id="service">
+      <div class="row">
+        <h2>SERVICE WE PROVIDE</h2>
+        <p class="little-description">
+          We are working with both individuals and businesses from all over the
+          globe to create awesome websites and applications.
+        </p>
+      </div>
+      <div class="row">
+        <div class="col span_1_of_4 box service-box">
+          <img
+            class="service-icon"
+            src="./resources/images/flag.png"
+            alt="branding-flag-icon"
+          />
+          <h3>Branding</h3>
+          <p>
+            Branding departments to create award-winning websites that tell the
+            story of their brand. They offer services to various industries
+            including SaaS, automotive.
+          </p>
+        </div>
+        <div class="col span_1_of_4 box service-box">
+          <img
+            class="service-icon"
+            src="./resources/images/design.png"
+            alt="design-icon"
+          />
+          <h3>Design</h3>
+          <p>
+            Web design refers to the design of websites that are displayed on
+            the internet. It usually refers to the user experience aspects of
+            website development rather than software development.
+          </p>
+        </div>
+        <div class="col span_1_of_4 box service-box">
+          <img
+            class="service-icon"
+            src="./resources/images/developement.png"
+            alt="developement-icon"
+          />
+          <h3>Developement</h3>
+          <p>
+            Create and maintain websites. We responsible for the site's
+            technical aspects, such as its performance and capacity, which are
+            measures of a website's speed and how much traffic the site can
+            handle.
+          </p>
+        </div>
+        <div class="col span_1_of_4 box service-box">
+          <img
+            class="service-icon"
+            src="./resources/images/rocket-science.png"
+            alt="rocket-science-icon"
+          />
+          <h3>Rocket Science</h3>
+          <p>
+            Rocket science is all about using rocket propulsion to move anything
+            from a firework to a manned spaceship. At the heart of rocketry is
+            Isaac Newton’s Third Law of Motion, something that’s been
+            established for over 300 years.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- service-section end -->
+
+    <!-- team-section started -->
+
+    <section class="team-section" id="team">
+      <div class="row">
+        <h2>MEET OUR BEAUTIFUL TEAM</h2>
+        <p class="little-description">
+          We are a small team of designers and developers, who help brands with
+          big ideas.
+        </p>
+      </div>
+      <div class="row">
+        <div class="col span_1_of_4 box team-box">
+          <img
+            class="team-member"
+            src="./resources/images/person1.png"
+            alt="team member 1"
+          />
+          <h3>James Clerk</h3>
+          <span class="role">CEO / Marketing Guru</span>
+          <p>
+            "I'm a result-driven chief executive officer with over 6 years of
+            experience growing and managing small and medium companies.
+          </p>
+
+          <div class="social-link">
+            <ul>
+              <li>
+                <a href="#"><i class="icon icon fa-brands fa-facebook"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="icon fa-brands fa-twitter"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="icon fa-brands fa-linkedin"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="icon fa-regular fa-envelope"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="col span_1_of_4 box team-box">
+          <img
+            class="team-member"
+            src="./resources/images/person2.png"
+            alt="team member 2"
+          />
+          <h3>Jack Alaba</h3>
+          <span class="role">Creative Director</span>
+          <p>
+            "I am professional creative director with 8+ years of experience,
+            skilled in relationship-building and position with Strong 57 Agency.
+            At InnerVista, created in-house graphic design department"
+          </p>
+
+          <div class="social-link">
+            <ul>
+              <li>
+                <a href="#"><i class="icon fa-brands fa-facebook"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="icon fa-brands fa-twitter"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="icon fa-brands fa-linkedin"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="icon fa-regular fa-envelope"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="col span_1_of_4 box team-box">
+          <img
+            class="team-member"
+            src="./resources/images/person3.png"
+            alt="team member 3"
+          />
+          <h3>Lara Sha</h3>
+          <span class="role">Lead Designer</span>
+          <p>
+            "I create new design themes for marketing and collateral materials.
+            Collaborated with creative team to design and produce
+            computer-generated artwork for marketing and promotional materials.
+            "
+          </p>
+
+          <div class="social-link">
+            <ul>
+              <li>
+                <a href="#"><i class="icon fa-brands fa-facebook"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="icon fa-brands fa-twitter"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="icon fa-brands fa-linkedin"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="icon fa-regular fa-envelope"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="col span_1_of_4 box team-box">
+          <img
+            class="team-member"
+            src="./resources/images/person4.png"
+            alt="team member 4"
+          />
+          <h3>Jack Adam</h3>
+          <span class="role">SEO/Developer</span>
+          <p>
+            "Experienced Web Developer adept in all stages of advanced web
+            development. Knowledgeable in user interface, testing, and debugging
+            processes also design, installation, testing and maintenance of web
+            systems."
+          </p>
+
+          <div class="social-link">
+            <ul>
+              <li>
+                <a href="#"><i class="icon fa-brands fa-facebook"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="icon fa-brands fa-twitter"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="icon fa-brands fa-linkedin"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="icon fa-regular fa-envelope"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- team-section end -->
+
+    <!-- skill-section start -->
+
+    <div class="skill-section" id="skill">
+      <div class="row">
+        <h2>WE GOT SKILLS</h2>
+        <p class="little-description">
+          We are experience and professional in Web Design, HTML, CSS, Graphic
+          Design and UI/UX
+        </p>
+      </div>
+      <div class="row">
+        <div class="col span_1_of_4">
+          <svg
+            class="radial-progress web-design"
+            data-percentage="90"
+            viewBox="0 0 80 80"
+          >
+            <circle class="x incomplete" cx="40" cy="40" r="35"></circle>
+            <circle
+              class="complete"
+              cx="40"
+              cy="40"
+              r="35"
+              style="stroke-dashoffset: 39.58406743523136"
+            ></circle>
+            <text
+              class="percentage"
+              x="50%"
+              y="57%"
+              transform="matrix(0, 1, -1, 0, 80, 0)"
+            >
+              90%
+            </text>
+          </svg>
+          <h3>WEB DESIGN</h3>
+        </div>
+        <div class="col span_1_of_4">
+          <svg
+            class="radial-progress html-css"
+            data-percentage="95"
+            viewBox="0 0 80 80"
+          >
+            <circle class="incomplete" cx="40" cy="40" r="35"></circle>
+            <circle
+              class="complete"
+              cx="40"
+              cy="40"
+              r="35"
+              style="stroke-dashoffset: 39.58406743523136"
+            ></circle>
+            <text
+              class="percentage"
+              x="50%"
+              y="57%"
+              transform="matrix(0, 1, -1, 0, 80, 0)"
+            >
+              95%
+            </text>
+          </svg>
+          <h3>HTML/CSS</h3>
+        </div>
+        <div class="col span_1_of_4">
+          <svg
+            class="radial-progress graphic-design"
+            data-percentage="85"
+            viewBox="0 0 80 80"
+          >
+            <circle class="incomplete" cx="40" cy="40" r="35"></circle>
+            <circle
+              class="complete"
+              cx="40"
+              cy="40"
+              r="35"
+              style="stroke-dashoffset: 39.58406743523136"
+            ></circle>
+            <text
+              class="percentage"
+              x="50%"
+              y="57%"
+              transform="matrix(0, 1, -1, 0, 80, 0)"
+            >
+              85%
+            </text>
+          </svg>
+          <h3>GRAPHIC DESIGN</h3>
+        </div>
+        <div class="col span_1_of_4">
+          <svg
+            class="radial-progress ui-ux"
+            data-percentage="80"
+            viewBox="0 0 80 80"
+          >
+            <circle class="incomplete" cx="40" cy="40" r="35"></circle>
+            <circle
+              class="complete"
+              cx="40"
+              cy="40"
+              r="35"
+              style="stroke-dashoffset: 39.58406743523136"
+            ></circle>
+            <text
+              class="percentage"
+              x="50%"
+              y="57%"
+              transform="matrix(0, 1, -1, 0, 80, 0)"
+            >
+              80%
+            </text>
+          </svg>
+          <h3>UI/UX</h3>
+        </div>
       </div>
     </div>
-  </header>
 
-  <!-- header end -->
+    <!-- skill-section end -->
 
-  <!-- service-section started -->
+    <!-- portfolio-section started -->
 
-  <section class="service-section " id="service">
-    <div class="row">
-      <h2>SERVICE WE PROVIDE</h2>
-      <p class="little-description">
-        We are working with both individuals and businesses from all over the
-        globe to create awesome websites and applications.
-      </p>
-    </div>
-    <div class="row">
-      <div class="col span_1_of_4 box service-box">
-        <img class="service-icon" src="./resources/images/flag.png" alt="branding-flag-icon" />
-        <h3>Branding</h3>
-        <p>
-          Branding departments to create award-winning websites that tell the
-          story of their brand. They offer services to various industries
-          including SaaS, automotive.
-        </p>
+    <section class="portfolio-section" id="portfolio">
+      <div class="row">
+        <h2>OUR PORTFOLIO</h2>
+        <p class="little-description">Here is our latest completd projects.</p>
       </div>
-      <div class="col span_1_of_4 box service-box">
-        <img class="service-icon" src="./resources/images/design.png" alt="design-icon" />
-        <h3>Design</h3>
-        <p>
-          Web design refers to the design of websites that are displayed on
-          the internet. It usually refers to the user experience aspects of
-          website development rather than software development. 
-        </p>
-      </div>
-      <div class="col span_1_of_4 box service-box">
-        <img class="service-icon" src="./resources/images/developement.png" alt="developement-icon" />
-        <h3>Developement</h3>
-        <p>
-          Create and maintain websites. We responsible for the site's
-          technical aspects, such as its performance and capacity, which are
-          measures of a website's speed and how much traffic the site can
-          handle.
-        </p>
-      </div>
-      <div class="col span_1_of_4 box service-box">
-        <img class="service-icon" src="./resources/images/rocket-science.png" alt="rocket-science-icon" />
-        <h3>Rocket Science</h3>
-        <p>
-          Rocket science is all about using rocket propulsion to move anything
-          from a firework to a manned spaceship. At the heart of rocketry is
-          Isaac Newton’s Third Law of Motion, something that’s been
-          established for over 300 years. 
-        </p>
-      </div>
-    </div>
-  </section>
 
-  <!-- service-section end -->
-
-  <!-- team-section started -->
-
-  <section class="team-section" id="team">
-    <div class="row">
-      <h2>MEET OUR BEAUTIFUL TEAM</h2>
-      <p class="little-description">
-        We are a small team of designers and developers, who help brands with
-        big ideas.
-      </p>
-    </div>
-    <div class="row">
-      <div class="col span_1_of_4 box team-box">
-        <img class="team-member" src="./resources/images/person1.png" alt="team member 1" />
-        <h3>James Clerk</h3>
-        <span class="role">CEO / Marketing Guru</span>
-        <p>
-          "I'm a result-driven chief executive officer with over 6 years of
-          experience growing and managing small and medium companies.
-        </p>
-
-        <div class="social-link">
-          <ul>
-            <li>
-              <a href="#"><i class="icon icon fa-brands fa-facebook"></i></a>
-            </li>
-            <li>
-              <a href="#"><i class="icon fa-brands fa-twitter"></i></a>
-            </li>
-            <li>
-              <a href="#"><i class="icon fa-brands fa-linkedin"></i></a>
-            </li>
-            <li>
-              <a href="#"><i class="icon fa-regular fa-envelope"></i></a>
-            </li>
-          </ul>
+      <div class="row">
+        <div class="portfolio-filter">
+          <button type="button" data-filter="all">All</button>
+          <button type="button" data-filter=".web">WEB</button>
+          <button type="button" data-filter=".apps">APPS</button>
+          <button type="button" data-filter=".icons">ICONS</button>
         </div>
       </div>
 
-      <div class="col span_1_of_4 box team-box">
-        <img class="team-member" src="./resources/images/person2.png" alt="team member 2" />
-        <h3>Jack Alaba</h3>
-        <span class="role">Creative Director</span>
-        <p>
-          "I am professional creative director with 8+ years of experience, skilled in relationship-building and position with Strong 57 Agency. At InnerVista, created in-house graphic design department"
-        </p>
-
-        <div class="social-link">
-          <ul>
-            <li>
-              <a href="#"><i class="icon fa-brands fa-facebook"></i></a>
-            </li>
-            <li>
-              <a href="#"><i class="icon fa-brands fa-twitter"></i></a>
-            </li>
-            <li>
-              <a href="#"><i class="icon fa-brands fa-linkedin"></i></a>
-            </li>
-            <li>
-              <a href="#"><i class="icon fa-regular fa-envelope"></i></a>
-            </li>
-          </ul>
+      <div class="container portfolio-details">
+        <div class="row   ">
+          <div class="col span_1_of_2 box  mix apps">
+            <img src="./resources/images/portfolio1.png" alt="Isometric Perspective Mock-Up" >
+            <h4>Isometric Perspective Mock-Up</h4>
+          </div>
+          <div class="col span_1_of_2 box mix apps web">
+            <img src="./resources/images/portfolio2.png" alt="Time Zone App UI" >
+            <h4>Time Zone App UI</h4>
+          </div>
+        </div>
+  
+        <div class="row">
+          <div class="col span_1_of_2 box mix icons">
+            <img src="./resources/images/portfolio3.png" alt="Viro Media Players UI" >
+            <h4>Viro Media Players UI</h4>
+          </div>
+          <div class="col span_1_of_2 box mix icons apps web">
+            <img src="./resources/images/portfolio4.png" alt="Blog / Magazine Flat UI Kit" >
+            <h4>Blog / Magazine Flat UI Kit</h4>
+          </div>
         </div>
       </div>
 
-      <div class="col span_1_of_4 box team-box">
-        <img class="team-member" src="./resources/images/person3.png" alt="team member 3" />
-        <h3>Lara Sha</h3>
-        <span class="role">Lead Designer</span>
-        <p>
-          "I create new design themes for marketing and collateral materials. Collaborated with creative team to design and produce computer-generated artwork for marketing and promotional materials. "
-        </p>
+      <div class="row">
+        <a class="btn btn-load-more" href="#">Load More Projects</a>
+      </div>
+    </section>
 
-        <div class="social-link">
-          <ul>
-            <li>
-              <a href="#"><i class="icon fa-brands fa-facebook"></i></a>
-            </li>
-            <li>
-              <a href="#"><i class="icon fa-brands fa-twitter"></i></a>
-            </li>
-            <li>
-              <a href="#"><i class="icon fa-brands fa-linkedin"></i></a>
-            </li>
-            <li>
-              <a href="#"><i class="icon fa-regular fa-envelope"></i></a>
-            </li>
-          </ul>
+    <!-- portfolio-section end -->
+
+    <!-- testimonial-section started -->
+
+    <section class="testimonial-section" id="testimonial">
+      <div class="row">
+        <h2>What people say about us</h2>
+        <p class="little-description">
+          Our client love us!
+        </p>
+      </div>
+
+      <div class="row testimonial-part-1">
+        <div class="col span_1_of_2 box">
+          <div class="client-photo">
+            <img width="100rem" src="./resources/images/client1.jpg" alt="client 1 photo">
+          </div>
+          <div class="client-review">
+            <p>"Working with them is realiable. Got all project in time"</p>
+            <h3>Lorry Imam</h3>
+            <span>CEO of AXL Tech</span>
+          </div>
+
+        </div>
+
+          <div class="col span_1_of_2 box">
+            <div class="client-photo">
+              <img width="100rem" src="./resources/images/client2.jpg" alt="client 2 photo">
+            </div>
+            <div class="client-review">
+              <p>"Helpful and co-oprative. Working with them for last 3 years."</p>
+              <h3>Jamal Hamadi</h3>
+              <span>Founder of Lorest</span>
+            </div>
+          </div>
+          
+          
+        
+      </div>
+
+      <div class="row testimonial-part-2">
+        <div class="col span_1_of_2 box">
+          <div class="client-photo">
+            <img width="100rem" src="./resources/images/client3.jpg" alt="client 3 photo">
+          </div>
+          <div class="client-review">
+            <p>"Worked with so many projects with them. They are professional and co-operative"</p>
+            <h3>De Gram</h3>
+            <span>CTO of Xeon Lab</span>
+          </div>
+        </div>
+        <div class="col span_1_of_2 box">
+          <div class="client-photo">
+            <img width="100rem" src="./resources/images/client4.jpg" alt="client 4 photo">
+          </div>
+          <div class="client-review">
+            <p>"Professional in their work. They understand the client demands"</p>
+            <h3>Steve Smith</h3>
+            <span>Co-founder BNL Wireless</span>
+          </div>
         </div>
       </div>
 
-      <div class="col span_1_of_4 box team-box">
-        <img class="team-member" src="./resources/images/person4.png" alt="team member 4" />
-        <h3>Jack Adam</h3>
-        <span class="role">SEO/Developer</span>
-        <p>
-          "Experienced Web Developer adept in all stages of advanced web development. Knowledgeable in user interface, testing, and debugging processes also design, installation, testing and maintenance of web systems."
-        </p>
+    </section>
 
-        <div class="social-link">
-          <ul>
-            <li>
-              <a href="#"><i class="icon fa-brands fa-facebook"></i></a>
-            </li>
-            <li>
-              <a href="#"><i class="icon fa-brands fa-twitter"></i></a>
-            </li>
-            <li>
-              <a href="#"><i class="icon fa-brands fa-linkedin"></i></a>
-            </li>
-            <li>
-              <a href="#"><i class="icon fa-regular fa-envelope"></i></a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </section>
+    <!-- testimonial-section end -->
 
-  <!-- team-section end -->
+    <!-- Jquery google cdn -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <!-- java script (vendors) -->
+    <script src="./vendors/js/html5shiv.min.js"></script>
+    <script src="./vendors/js/respond.min.js"></script>
+    <script src="./vendors/js/selectivizr-min.js"></script>
+    <script src="./vendors/js/animatedRadial.js"></script>
+    <script src="./vendors/js/mixitup.min.js"></script>
+    <!-- java script (resources) -->
+    <script src="./resources/js/main.js"></script>
 
-  <!-- skill-section start -->
-
-  <div class="skill-section" id="skill">
-    <div class="row">
-      <h2>WE GOT SKILLS</h2>
-      <p class="little-description">We are experience and professional in Web Design, HTML, CSS, Graphic Design and UI/UX </p>
-    </div>
-    <div class="row">
-      <div class="col span_1_of_4">
-        <svg class="radial-progress web-design" data-percentage="90" viewBox="0 0 80 80">
-          <circle class="x incomplete" cx="40" cy="40" r="35"></circle>
-          <circle class="complete" cx="40" cy="40" r="35" style="stroke-dashoffset: 39.58406743523136;"></circle>
-          <text class="percentage" x="50%" y="57%" transform="matrix(0, 1, -1, 0, 80, 0)">90%</text>
-        </svg>
-        <h3>WEB DESIGN</h3>
-      </div>
-      <div class="col span_1_of_4">
-        <svg class="radial-progress html-css" data-percentage="95" viewBox="0 0 80 80">
-          <circle class="incomplete" cx="40" cy="40" r="35"></circle>
-          <circle class="complete" cx="40" cy="40" r="35" style="stroke-dashoffset: 39.58406743523136;"></circle>
-          <text class="percentage" x="50%" y="57%" transform="matrix(0, 1, -1, 0, 80, 0)">95%</text>
-        </svg>
-        <h3>HTML/CSS</h3>
-      </div>
-      <div class="col span_1_of_4">
-        <svg class="radial-progress graphic-design" data-percentage="85" viewBox="0 0 80 80">
-          <circle class="incomplete" cx="40" cy="40" r="35"></circle>
-          <circle class="complete" cx="40" cy="40" r="35" style="stroke-dashoffset: 39.58406743523136;"></circle>
-          <text class="percentage" x="50%" y="57%" transform="matrix(0, 1, -1, 0, 80, 0)">85%</text>
-        </svg>
-        <h3>GRAPHIC DESIGN</h3>
-      </div>
-      <div class="col span_1_of_4">
-        <svg class="radial-progress ui-ux" data-percentage="80" viewBox="0 0 80 80">
-          <circle class="incomplete" cx="40" cy="40" r="35"></circle>
-          <circle class="complete" cx="40" cy="40" r="35" style="stroke-dashoffset: 39.58406743523136;"></circle>
-          <text class="percentage" x="50%" y="57%" transform="matrix(0, 1, -1, 0, 80, 0)">80%</text>
-        </svg>
-        <h3>UI/UX</h3>
-      </div>
-    </div>
-  </div>
-
-  <!-- skill-section end -->
-
-
-  <!-- Jquery google cdn -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
-  <!-- java script (vendors) -->
-  <script src="./vendors/js/html5shiv.min.js"></script>
-  <script src="./vendors/js/respond.min.js"></script>
-  <script src="./vendors/js/selectivizr-min.js"></script>
-  <script src="./vendors/js/animatedRadial.js"></script>
-  <!-- java script (resources) -->
-  <script src="./resources/js/main.js"></script>
-
-  <!-- <script>
+    <!-- <script>
     const boxes = document.querySelectorAll(".box");
 
 window.addEventListener("scroll", checkBoxes);
@@ -309,6 +546,5 @@ a=1;
   });
 }
     </script> -->
-</body>
-
+  </body>
 </html>
