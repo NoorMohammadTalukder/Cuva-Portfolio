@@ -1,71 +1,80 @@
-@media only screen and (max-width:1024px){
-    html{
-        font-size: 57.5%;
-    }
-    .row{
-        margin: 0 2rem;
-    }
-    .main-nav {
-        display: none;
-    }
-    .client-photo{
-        width:100%;
-        float:none;
-        text-align: center;
-    }
-    .client-review{
-        width:100%;
-        float:none;
-        text-align: center;
-    }
-    .client-review {
-        margin-left: 0;
-    }
-    .contact-section form {
-        margin-top: 5rem;
-        width: 80%;
-        margin-left: 10%;
-      }
+@media only screen and (max-width: 1024px) {
+  html {
+    font-size: 57.5%;
+  }
+  .row {
+    margin: 0 2rem;
+  }
+  .main-nav {
+    display: none;
+  }
+  .client-photo {
+    width: 100%;
+    float: none;
+    text-align: center;
+  }
+  .client-review {
+    width: 100%;
+    float: none;
+    text-align: center;
+  }
+  .client-review {
+    margin-left: 0;
+  }
+  .contact-section form {
+    margin-top: 5rem;
+    width: 80%;
+    margin-left: 10%;
+  }
+
+  .mobile-menu span{
+      display: block;
+  }
 }
 
-@media only screen and (max-width:980px){
-    .span_1_of_4{
-        width: 49.2%;
-    }
-    .span_1_of_4:nth-child(3){
-        margin-left: 0;
-    }
-    .hero-text-box{
-        /* background-color: red; */
-        width: 90%;
-    }
+@media only screen and (max-width: 980px) {
+  .span_1_of_4 {
+    width: 49.2%;
+  }
+  .span_1_of_4:nth-child(3) {
+    margin-left: 0;
+  }
+  .hero-text-box {
+    /* background-color: red; */
+    width: 90%;
+  }
 
-    .footer-section li a {
-        
-        font-size: 2rem;
-    }
+  .footer-section li a {
+    font-size: 2rem;
+  }
 }
 
-@media only screen and (max-width:480px){
-    html{
-        font-size: 50.5%;
-    }
-    .span_1_of_4{
-        width: 100%;
-    }
-    textarea{
-        margin-top: 0.7rem;
-    }
+@media only screen and (max-width: 480px) {
+  html {
+    font-size: 50.5%;
+  }
+  header {
+    height: 70vh;
+  }
+  header h1 {
+    font-size: 3rem;
+  }
+  .span_1_of_4 {
+    width: 100%;
+  }
+  textarea {
+    margin-top: 0.7rem;
+  }
 
-    footer row{
-        width: 80%;
-    }
+  footer row {
+    width: 80%;
+  }
 
-    .footer-section{
-        text-align: left;
-    }
+  .footer-section {
+    text-align: left;
+  }
 
-    footer ul li :nth-child(5){
-        padding-left: 6px;
-    }
+  footer ul li :nth-child(5) {
+    padding-left: 6px;
+  }
 }
