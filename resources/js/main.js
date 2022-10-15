@@ -13,7 +13,11 @@ $(document).ready(function(){
 })
 
 function openNav(){
-    document.getElementById("myNav").style.width="100%";
+    document.getElementById("myNav").style.width="100%";   
+    document.getElementById("myNav").style.display="block";   
+    // document.getElementsByClassName("overlay").style.display="block";
+    // document.getElementsByClassName("overlay").style.display="block";
+    // console.log(1)
 }
 
 function closeNav(){
