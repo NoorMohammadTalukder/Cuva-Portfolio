@@ -36,7 +36,7 @@
   <body>
     <!-- header started -->
 
-    <header id="myHeader">
+    <header id="home">
       <nav class="navigation">
         <div class="row">
           <a href="#">
@@ -48,11 +48,13 @@
             />
           </a>
           <ul class="main-nav">
-            <li><a href="#">HOME</a></li>
+            <li><a href="#"home>HOME</a></li>
             <li><a href="#service">SERVICE</a></li>
             <li><a href="#team">TEAM</a></li>
             <li><a href="#skill">SKILLS</a></li>
             <li><a href="#portfolio">PORTFOLIO</a></li>
+            <li><a href="#testimonial">Client Review</a></li>
+            <li><a href="#contact">Contact Us</a></li>
           </ul>
         </div>
       </nav>
@@ -63,7 +65,7 @@
             Hi there! We are the new kids on the block and we build awesome
             websites and mobile apps.
           </h1>
-          <a class="btn btn-hero" href="#">Contact Us</a>
+          <a class="btn btn-hero" href="#contact">Contact Us</a>
         </div>
       </div>
     </header>
@@ -72,7 +74,7 @@
 
     <!-- service-section started -->
 
-    <section class="service-section" id="service">
+    <section class="service-section js--services-section" id="service">
       <div class="row">
         <h2>SERVICE WE PROVIDE</h2>
         <p class="little-description">
@@ -418,24 +420,36 @@
       </div>
 
       <div class="container portfolio-details">
-        <div class="row   ">
-          <div class="col span_1_of_2 box  mix apps">
-            <img src="./resources/images/portfolio1.png" alt="Isometric Perspective Mock-Up" >
+        <div class="row">
+          <div class="col span_1_of_2 box mix apps">
+            <img
+              src="./resources/images/portfolio1.png"
+              alt="Isometric Perspective Mock-Up"
+            />
             <h4>Isometric Perspective Mock-Up</h4>
           </div>
           <div class="col span_1_of_2 box mix apps web">
-            <img src="./resources/images/portfolio2.png" alt="Time Zone App UI" >
+            <img
+              src="./resources/images/portfolio2.png"
+              alt="Time Zone App UI"
+            />
             <h4>Time Zone App UI</h4>
           </div>
         </div>
-  
+
         <div class="row">
           <div class="col span_1_of_2 box mix icons">
-            <img src="./resources/images/portfolio3.png" alt="Viro Media Players UI" >
+            <img
+              src="./resources/images/portfolio3.png"
+              alt="Viro Media Players UI"
+            />
             <h4>Viro Media Players UI</h4>
           </div>
           <div class="col span_1_of_2 box mix icons apps web">
-            <img src="./resources/images/portfolio4.png" alt="Blog / Magazine Flat UI Kit" >
+            <img
+              src="./resources/images/portfolio4.png"
+              alt="Blog / Magazine Flat UI Kit"
+            />
             <h4>Blog / Magazine Flat UI Kit</h4>
           </div>
         </div>
@@ -453,65 +467,136 @@
     <section class="testimonial-section" id="testimonial">
       <div class="row">
         <h2>What people say about us</h2>
-        <p class="little-description">
-          Our client love us!
-        </p>
+        <p class="little-description">Our client love us!</p>
       </div>
 
       <div class="row testimonial-part-1">
         <div class="col span_1_of_2 box">
           <div class="client-photo">
-            <img width="100rem" src="./resources/images/client1.jpg" alt="client 1 photo">
+            <img
+              width="100rem"
+              src="./resources/images/client1.jpg"
+              alt="client 1 photo"
+            />
           </div>
           <div class="client-review">
             <p>"Working with them is realiable. Got all project in time"</p>
             <h3>Lorry Imam</h3>
             <span>CEO of AXL Tech</span>
           </div>
-
         </div>
 
-          <div class="col span_1_of_2 box">
-            <div class="client-photo">
-              <img width="100rem" src="./resources/images/client2.jpg" alt="client 2 photo">
-            </div>
-            <div class="client-review">
-              <p>"Helpful and co-oprative. Working with them for last 3 years."</p>
-              <h3>Jamal Hamadi</h3>
-              <span>Founder of Lorest</span>
-            </div>
+        <div class="col span_1_of_2 box">
+          <div class="client-photo">
+            <img
+              width="100rem"
+              src="./resources/images/client2.jpg"
+              alt="client 2 photo"
+            />
           </div>
-          
-          
-        
+          <div class="client-review">
+            <p>
+              "Helpful and co-oprative. Working with them for last 3 years."
+            </p>
+            <h3>Jamal Hamadi</h3>
+            <span>Founder of Lorest</span>
+          </div>
+        </div>
       </div>
 
       <div class="row testimonial-part-2">
         <div class="col span_1_of_2 box">
           <div class="client-photo">
-            <img width="100rem" src="./resources/images/client3.jpg" alt="client 3 photo">
+            <img
+              width="100rem"
+              src="./resources/images/client3.jpg"
+              alt="client 3 photo"
+            />
           </div>
           <div class="client-review">
-            <p>"Worked with so many projects with them. They are professional and co-operative"</p>
+            <p>
+              "Worked with so many projects with them. They are professional and
+              co-operative"
+            </p>
             <h3>De Gram</h3>
             <span>CTO of Xeon Lab</span>
           </div>
         </div>
         <div class="col span_1_of_2 box">
           <div class="client-photo">
-            <img width="100rem" src="./resources/images/client4.jpg" alt="client 4 photo">
+            <img
+              width="100rem"
+              src="./resources/images/client4.jpg"
+              alt="client 4 photo"
+            />
           </div>
           <div class="client-review">
-            <p>"Professional in their work. They understand the client demands"</p>
+            <p>
+              "Professional in their work. They understand the client demands"
+            </p>
             <h3>Steve Smith</h3>
             <span>Co-founder BNL Wireless</span>
           </div>
         </div>
       </div>
-
     </section>
 
     <!-- testimonial-section end -->
+
+    <!-- contact-section started -->
+    <section class="contact-section" id="contact">
+      <div class="row">
+        <h2>GET IN TOUCH</h2>
+        <p class="little-description">
+          568, Jatrabari, Bangladesh. Tel: 123 456
+        </p>
+      </div>
+
+      <div class="row">
+        <form action="" method="post" target="_blank">
+          <div class="col span_1_of_2">
+            <input type="text" name="Name" placeholder="Your Name*" required />
+          </div>
+          <div class="col span_1_of_2">
+            <input type="mail" name="Mail" placeholder="Your Mail*" required />
+          </div>
+
+          <div class="">
+            <textarea
+              name="Message"
+              id=""
+              cols="30"
+              rows="10"
+              placeholder="Your Message*"
+            ></textarea>
+          </div>
+          <div class="">
+            <input type="submit" value="SEND MESSAGE" class="btn btn-submit" />
+          </div>
+        </form>
+      </div>
+    </section>
+    <!-- contact-section end -->
+
+    <!-- footer-section started -->
+
+    <footer class="footer-section">
+      <div class="row">
+        <ul>
+          <li><a href="#">Facebook</a></li>
+        <li><a href="#">Twitter</a></li>
+        <li><a href="#">Google+</a></li>
+        <li><a href="#">LinkedIn</a></li>
+        <li><a href="#">Behance</a></li>
+        <li><a href="#">Dribble</a></li>
+        <li><a href="#">GitHub</a></li>
+        </ul>
+      </div>
+    </footer>
+
+
+    <!-- footer-section end -->
+
 
     <!-- Jquery google cdn -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
@@ -519,6 +604,7 @@
     <script src="./vendors/js/html5shiv.min.js"></script>
     <script src="./vendors/js/respond.min.js"></script>
     <script src="./vendors/js/selectivizr-min.js"></script>
+    <script src="./vendors/js/jquery.waypoints.min.js"></script>
     <script src="./vendors/js/animatedRadial.js"></script>
     <script src="./vendors/js/mixitup.min.js"></script>
     <!-- java script (resources) -->

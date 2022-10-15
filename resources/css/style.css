@@ -33,8 +33,20 @@ section {
 }
 
 .navigation {
-  position: sticky;
+  background: #344a8eaf;
+  padding-bottom: 1rem;
+} 
+
+.sticky{
+  position: fixed;
   top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 9999;
+}
+.hero-text-box{
+
+  max-width: 100rem;
 }
 /* header h1 */
 header h1 {
@@ -131,7 +143,7 @@ header {
 }
 
 .logo {
-  height: 3rem;
+  height: 2.5rem;
   width: auto;
   margin-top: 2rem;
   float: left;
@@ -476,4 +488,84 @@ svg.radial-progress text {
   font-size: 1.1rem;
   display: block;
   margin-top: 0.5rem;
+}
+
+/* contact-section */
+
+.contact-section{
+    text-align: center;
+    background: linear-gradient(#afb13a98,#04106896),
+    url(./images/contact-section-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center center;
+  color: #fff;
+
+}
+.contact-section h2::after{
+    background: #fff;
+}
+
+.contact-section form{
+    margin-top: 5rem;
+    width: 80%;
+    margin-left: 15%;
+
+}
+
+.contact-section input[type="text"],
+.contact-section input[type="mail"],
+.contact-section textarea{
+    background: #273a71;
+    width: 100%;
+    font-size: 1.8rem;
+    border-radius: 0.5rem;
+    padding: 1.5rem;
+    border: 0;
+    color: #fff;
+}
+
+.contact-section form::placeholder{
+    color: #fff;
+    opacity: 1;
+}
+
+.btn-submit{
+    background: #14a58c;
+    border: 0;
+    transition: 0.3s ease-in;
+}
+
+.btn-submit:hover{
+    background: #693a04;
+}
+
+/*------------------------------------
+       footer-section
+-------------------------------------- */
+
+.footer-section{
+  background: #344b8e;
+  padding: 4rem 0;
+  text-align: center;
+  /* color: #fff; */
+}
+
+.footer-section li{
+  display: inline-block;
+  margin: 0 2rem;
+  /* background-color: red; */
+}
+
+.footer-section li a{
+  color: #fff;
+  font-size: 2.4rem;
+  text-decoration: none;
+  transition: 0.3s ease-in;
+}
+
+.footer-section li:hover a{
+  color: #14a58c;
+
 }
